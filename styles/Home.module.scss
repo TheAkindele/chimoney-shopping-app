@@ -1,0 +1,47 @@
+@import "./mixins.scss";
+
+
+.home {
+    width: 100%;
+    height: 100%;
+    // background-color: pink;
+    &__main {
+        // background-color: pink;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    &__products_container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        gap: 3%;
+    }
+}
+
+
+
+.product_detail {
+    &__container {
+        width: 100%;
+        height: 100vh;
+        // background-color: pink;
+    }
+
+    &__main {
+        width: 80%;
+        min-height: 80vh;
+        margin: 0 auto;
+        // background-color: green;
+        @include screen("mobile") {
+            width: 95%;
+        }
+    }
+
+    &__backBtn {
+        cursor: pointer;
+        margin-bottom: 2rem;
+    }
+}

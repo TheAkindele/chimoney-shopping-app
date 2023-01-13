@@ -1,0 +1,53 @@
+@import "./mixins.scss";
+
+.cart {
+    &__container {
+        width: 100%;
+        height: 100%;
+    }
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    &__main {
+        width: 100%;
+        height: auto;
+        @include flex(row, unset, unset);
+        gap: 2%;
+        @include screen("mobile") {
+            flex-direction: column-reverse;
+        }
+    }
+    &__backBtn {
+        cursor: pointer;
+        margin: 2rem 2%;
+    }
+    &__main_section {
+        width: 62%;
+        height: auto;
+        @include screen("mobile") {
+            width: 100%;
+        }
+    }
+    &__aside {
+        width: 35%;
+        height: auto;
+        overflow-y: hidden;
+        @include flex(column, unset, center);
+        background-color: white;
+        box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.07);
+        border-radius: 8px;
+        padding: 1.5rem 0.5rem;
+        box-sizing: border-box;
+        @include screen("mobile") {
+            width: 100%;
+        }
+    }
+
+    &__total {
+        @include bodyFont(16, 20, 500);
+    }
+    &__amount {
+        @include bodyFont(16, 20, 600);
+    }
+}
