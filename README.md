@@ -23,7 +23,7 @@
 ### Development
 
 Clone the project and run `yarn` or `npm install` to install all pacakges used.
-Run `yarn dev` or `npm dev` to start the app in development mode.
+Run `yarn dev` or `npm run dev` to start the app in development mode.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
