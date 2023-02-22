@@ -27,6 +27,9 @@ Run `yarn dev` or `npm run dev` to start the app in development mode.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### Demo
+Check out project demo here - https://shopping-cart-app-theta.vercel.app/
+
 
 ## Contact
 
